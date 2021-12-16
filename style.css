@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap");
+body {
+  background-color: ghostwhite;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  font-family: "Zen Old Mincho", serif;
+  font-weight: bold;
+  color: black;
+ 
+}
+
+nav ul li{
+  padding: 5px;
+}
+.container {
+    height: 75vh;
+    background-color:black;
+    color: white;
+    font-family: "Zen Old Mincho", serif;
+    display: flex;
+    margin: 20px auto;
+    width: 80%;
+    border-radius:15px;
+    padding: 30px;
+    background-image: url("back.jpg");
+    background-size:auto;
+}
+
+nav ul  {
+  display: flex;
+  list-style-type: none;
+  height: 50px;
+ 
+  background-color: rgba(118, 204, 19, 0.726);
+  align-items: center;
+}
+
+.brand img {
+  width: 120px;
+}
+
+.bottom {
+    position: sticky;
+    height:100px;
+    background-color:black;
+    display: flex;
+    color:white;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.icons{
+    margin-top:15px;
+}
+
+#progress {
+    width: 1200px;
+    cursor: pointer;
+    
+}
+
+
+
+
+.songItem{
+  height:40px;
+  display: flex;
+  background-color: white;
+  color: black;
+  margin: 12px;
+  width:120%;
+  justify-content: space-around;
+  align-items: center;
+  border-radius:25px;
+}
+
+.songItem img {
+  width:35px;
+  border-radius:25px;
+
+}
+
+.timestamp{
+  margin: 10px;
+}
+
+.timestamp i {
+
+}
+
+.songInfo{
+  position:absolute ;
+  left: 11vw;
+  font-family: "Zen Old Mincho", serif;
+}
+.songInfo img{
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
