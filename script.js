@@ -4,7 +4,7 @@ let masterPlay = document.getElementById("masterPlay");
 let progressBar = document.getElementById('progress');
 let audioElement = new Audio('sea.mp3');
 let gif = document.getElementById('gif');
-let masterSongName = document.getElementById('MasterSongName');
+let masterSongName = document.getElementById('masterSongName');
 
 let songItem = Array.from(document.getElementsByClassName('songItem'));
 let songs = [
@@ -52,6 +52,7 @@ songItem.forEach((element, i) => {
             masterPlay.classList.remove('fa-play-circle');
             masterPlay.classList.add('fa-pause-circle');
             gif.style.opacity = 1;
+          
         }
         else {
             audioElement.pause();
@@ -99,6 +100,7 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element) =>
         masterPlay.classList.add('fa-pause-circle');
         masterSongName.innerText = `${src} `;
         
+        
     });
 })
 
@@ -120,6 +122,7 @@ document.getElementById('next').addEventListener('click',()=>
     masterPlay.classList.remove('fa-play-circle');
     masterPlay.classList.add('fa-pause-circle');
     masterSongName.innerText = `${src} `;
+    
 })
 
 document.getElementById('previous').addEventListener('click',()=>{
