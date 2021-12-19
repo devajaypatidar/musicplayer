@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Player </title>
-    <link rel="stylesheet" href="style.css">    
+    <link rel="stylesheet" href="style.css">   
+    
+ 
 </head>
 <body>
-    <nav>
+    <nav >
         <ul>
             <li class="brand" ><img src="icon.png" alt="Music"></li>
             <li> Home </li>
@@ -79,7 +81,7 @@
                     </span>
                 </div>
 
-                <div class="songItem">
+                <div class="songItem ">
                     <img src="list.png" alt="1" srcset="">
                     <span class ="songName">Sea</span>
                     <span class="songListPlay">
@@ -106,7 +108,10 @@
     
 
     <div class="bottom">
-        <input type="range" name="range" id="progress" min ="0" value ="0" max ="100">
+        
+        <div class =" container2 ">
+            <input  type="range" name="range" id="progress" min ="0" value ="0" max ="100">
+        </div>
         <div class="icons">
             <i id ='previous'class="fas fa-2x fa-backward"></i>
             <i  class=" far fa-2x fa-play-circle" id = "masterPlay"></i>
